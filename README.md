@@ -6,7 +6,7 @@ value or the exact thrown error.
 ```ts
 import { once } from "@lucid-softworks/once";
 
-const connect = once(() => createConnection());
+const connect = once(() => ({ connected: true }));
 
 connect(); // creates the connection
 connect(); // returns the same connection
